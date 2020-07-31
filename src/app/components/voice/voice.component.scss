@@ -1,0 +1,30 @@
+div.slider{
+    background-color: rgb(226, 210, 226);
+    padding:30px;
+    span{
+        margin:8px;
+    }
+}
+
+div.taps{
+    border:1px solid rgb(153, 152, 152);
+    border-radius: 5px;
+    // padding:10px;
+    .header{
+        padding-top:10px;
+        border-bottom: 1px solid rgb(153, 152, 152);
+        span{
+            cursor:pointer ;
+        }
+        span.activeTap{
+            border-bottom: 3px solid orangered;
+        }
+    }
+    .forms{
+        padding:15px;
+        direction: rtl;
+        button{
+            width:100%;
+        }
+    }
+}

@@ -1,0 +1,68 @@
+<div class="slider text-center">
+    <h1> سمعنا صوتك</h1>
+    <span>الرئيسية</span>
+    <span>سمعنا صوتك</span>
+    <span>اتصل بنا</span>
+</div>
+
+<div class="container">
+    <div class="row mb-5">
+        <div class="col-md-6">
+            <div class="mb-2" style="background-color: chartreuse; width:100%;height: 250px;">Map</div>
+            <div  style="background-color: chartreuse;width:100%;height:150px;">
+                 contact us
+            </div>
+        </div>
+        <div class="col-md-6">
+            <div class="taps">
+                <div class="header d-flex justify-content-around">
+                    <span  *ngFor="let tap of taps" [class.activeTap]="tap.active" (click)="changeTap(tap)">
+                      {{tap.title}}
+                    </span>
+                </div>
+                <div class="forms">
+                    <form *ngIf="contactUsTap">
+                        <div class="form-group">
+                            <input type="text" class="form-control" placeholder="الاسم" name="pswd">
+                        </div>
+                        <div class="form-group">
+                            <input type="email" class="form-control" placeholder="البريد الالكتروني" name="email">
+                        </div>
+                        <div class="form-group">
+                            <input type="text" class="form-control" placeholder="رقم الجوال" name="pswd">
+                        </div>
+                        <div class="form-group">
+                            <textarea class="form-control" rows="5"placeholder="الرسالة"></textarea>
+                          </div>
+                        <button type="submit" class="btn btn-primary">ارسل الان</button>
+                    </form>
+                    <div class="text-center" *ngIf="opinionTap">
+                        <p>استطلاع الراي</p>
+                        <p>استطلاع الراي</p>
+                        <p>استطلاع الراي</p>
+                        <p>استطلاع الراي</p>
+                        <p>استطلاع الراي</p>
+                        <p>استطلاع الراي</p>
+                        <p>استطلاع الراي</p>
+                        <p>استطلاع الراي</p>
+                        <p>استطلاع الراي</p>
+                        <button type="submit" class="btn btn-primary">ارسل الان</button>
+
+                    </div>
+                    <div class="text-center" *ngIf="complaintsTap">
+                        <p> الشكاوي والاقتراحات</p>
+                        <p> الشكاوي والاقتراحات</p>
+                        <p> الشكاوي والاقتراحات</p>
+                        <p> الشكاوي والاقتراحات</p>
+                        <p> الشكاوي والاقتراحات</p>
+                        <p> الشكاوي والاقتراحات</p>
+                        <p> الشكاوي والاقتراحات</p>
+                        <p> الشكاوي والاقتراحات</p>
+                        <button type="submit" class="btn btn-primary">ارسل الان</button>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

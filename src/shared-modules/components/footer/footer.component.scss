@@ -1,0 +1,46 @@
+section.header{
+    background-color: blue;
+    height: 120px;
+    .col-md-4{
+    position: relative;
+        .yourOpinion{
+            height: 250px;
+            width:100%;
+            border :1px solid orange;
+            position: absolute;
+            background-color: white;
+        }
+    }
+    }
+
+section.footer{
+    // height: 150px;
+    // padding-top:30px;
+    background-color: black;
+   div.copyWrite{
+       padding:10px;
+       position: fixed;
+       bottom: 0;
+       left:0;
+       right:0;
+       background-color: orange;
+   }
+}
+
+// use mixn scss with paramater here (class section)
+@media only screen and (max-width: 767px) {
+    section.header{
+        background-color: blue;
+        height: auto;
+        .col-md-4{
+        position: static;
+            .yourOpinion{
+                height: auto;
+                width:100%;
+                border :1px solid orange;
+                position: static;
+                background-color: white;
+            }
+        }
+        }
+  }

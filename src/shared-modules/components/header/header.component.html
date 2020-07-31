@@ -1,0 +1,24 @@
+<header>
+    <!--600-->
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-6" style="background-color: green;">
+                تليفون - تواصل -ميل
+              </div>
+            <div class="col-sm-6" style="background-color: red;">
+              اسم الشركه
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-sm-6" style="background-color: blue;">اخبار الجمعيه - الخدمات </div>
+            <div class="col-sm-6" style="background-color: yellow;">اللوجو والصوره</div>
+        </div>
+    </div>
+</header>
+<nav class="container" style="background-color:aquamarine;">
+    <ul class="menu">
+        <li class="" *ngFor="let item of menu">
+          <a class="" [routerLink]="item.router">{{item.name}}</a>
+        </li>
+    </ul>
+</nav>
