@@ -7,17 +7,17 @@ div.slider{
 }
 
 div.taps{
-    border:1px solid rgb(153, 152, 152);
+    border:1px solid var(--hiden-text-color);
     border-radius: 5px;
     // padding:10px;
     .header{
         padding-top:10px;
-        border-bottom: 1px solid rgb(153, 152, 152);
+        border-bottom: 1px solid var(--hiden-text-color);
         span{
             cursor:pointer ;
         }
         span.activeTap{
-            border-bottom: 3px solid orangered;
+            border-bottom: 3px solid var(--sub-main-color);
         }
     }
     .forms{
@@ -25,16 +25,18 @@ div.taps{
         direction: rtl;
         button{
             width:100%;
+            background-color: var(--main-color);
+            color:#fff;
         }
     }
 }
 
 div.contacts{
-    color:gray;
+    color:var(--hiden-text-color);
     p{
         line-height: 0;
         i{
-            color:#417a1f
+            color:var(--main-color)
         }
     }
     .socialMedia{

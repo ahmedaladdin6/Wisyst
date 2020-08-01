@@ -2,7 +2,9 @@
     font-weight: bolder;
     font-size:20px;
 }
-.gray{color:gray}
+.gray{
+    color:var(--hiden-text-color)
+}
 
 section.header {
     height: 120px;
@@ -14,7 +16,7 @@ section.header {
                 direction: rtl;
             }
             span{
-                background-color: #417a1f;
+                background-color: var(--main-color);
                 color:#fff;
             }
         }
@@ -27,16 +29,16 @@ section.header {
             position: absolute;
             border: 10px solid #fff;
             border-radius: 10px;
-            background-color: white;
+            background-color: #fff;
             .content{
                 height: 330px;
-                border: 3px solid #e3da56;
+                border: 3px solid var(--sub-main-color);
                 border-radius: 10px;
                 form{
                     direction: rtl;
                     button{
                         width:100%;
-                        background-color:#417a1f;
+                        background-color:var(--main-color);
                         color: #fff;
                     }
                 }
@@ -46,7 +48,7 @@ section.header {
 }
 
 section.footer {
-    background-color: #292f25;
+    background-color: var(--footer-color);
 div.info{
     padding-bottom:50px!important;
     div.links{
@@ -65,7 +67,7 @@ div.info{
         bottom: 0;
         left: 0;
         right: 0;
-        background-color: #e3da56;
+        background-color: var(--sub-main-color);
     }
 }
 
@@ -78,9 +80,9 @@ div.info{
             .yourOpinion {
                 height: auto;
                 width: 100%;
-                border: 1px solid orange;
+                border: 1px solid var(--sub-main-color);
                 position: static;
-                background-color: white;
+                background-color: #fff;
             }
         }
     }

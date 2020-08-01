@@ -1,16 +1,26 @@
+@mixin button ($margin,$height, $bk-color,$color){
+    margin-top: $margin;
+    height: $height;
+    background-color: $bk-color;
+    color:$color ;
+    i{
+        color: $color;
+    }
+}
+
 header {
     padding: 15px;
     background-color: #fff;
 
     i {
-        color: #417a1f;
+        color: var(--main-color);
     }
 
     hr {
         width: 100%;
         border: none;
         height: 1px;
-        background-color: #417a1f;
+        background-color: var(--main-color);
     }
 
     .logo {
@@ -18,38 +28,26 @@ header {
             p.name {
                 line-height: 0;
                 letter-spacing: 3px;
-                color: #e3da56;
+                color: var(--sub-main-color);
             }
         }
         .logoImg {
             width: 70px;
             img {
-                border: 2px solid #e3da56;
+                border: 2px solid var(--sub-main-color);
             }
         }
         button.donation{
-            margin-top:-10px;
-            height: 50px;
-            background-color: #e3da56;
-            color:#fff;
-            i{
-                color: #fff;
-            }
+            @include button(-10px,50px,var(--sub-main-color),#fff);
         }
         button.volunteer{
-            margin-top:-10px;
-            height: 50px;
-            background-color: #417a1f;
-            color:#fff ;
-            i{
-                color: #fff;
-            }
+            @include button(-10px,50px,var(--main-color),#fff);
         }
     }
 }
 
 nav {
-    background-color:#417a1f;
+    background-color:var(--main-color);
     border-radius:5px;
     ul.menu {
         padding: 10px;
@@ -61,7 +59,7 @@ nav {
                 color:#fff;
                 text-decoration: none;
                 &:active,&:hover{
-                    color:#e3da56;
+                    color:var(--sub-main-color);
                 }
             }
         }
@@ -74,7 +72,7 @@ i.menu,i.closed{
 
 @media only screen and (max-width: 991px) {
   div.sideMenu{
-      background-color: #417a1f;
+      background-color: var(--main-color);
       width:100%;
       padding:10px;
     i.menu,i.closed{

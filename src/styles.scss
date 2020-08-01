@@ -2,7 +2,14 @@
     font-family: 'mainFont';
     src: url('assets/fonts/Almarai-Regular.ttf');
 }
+:root 
+{
+--main-color: #417a1f;
+--sub-main-color :#e3da56;
+--footer-color:#292f25;
+--hiden-text-color:gray;
 
+}
 body{
     font-family: 'mainFont';
 }
