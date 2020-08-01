@@ -31,6 +31,7 @@ export class VoiceComponent implements OnInit {
   }
 
   ngOnInit(): void {
+    window.scrollTo(0, 0)
     this.geoLocationService.getPosition().subscribe(
       (pos: Position) => {
           this.coordinates = {
