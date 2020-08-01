@@ -8,7 +8,11 @@
 <div class="container">
     <div class="row mb-5">
         <div class="col-md-6">
-            <div class="mb-2" style="background-color: chartreuse; width:100%;height: 200px;">Map</div>
+            <div class="mb-2">
+                <agm-map [latitude]="coordinates?.latitude" [longitude]="coordinates?.longitude" [zoom]="10">
+                    <agm-marker [latitude]="coordinates?.latitude" [longitude]="coordinates?.longitude"></agm-marker>
+                </agm-map>
+            </div>
             <div class="contacts text-right p-3">
                 <p *ngFor="let info of contacts">
                     {{info.name}}

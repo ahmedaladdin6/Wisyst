@@ -1,17 +1,20 @@
 import { Component, OnInit } from '@angular/core';
-
+import{GeoLocationService} from '../../../shared/services/geo-location.service'
 @Component({
   selector: 'app-voice',
   templateUrl: './voice.component.html',
   styleUrls: ['./voice.component.scss']
 })
 export class VoiceComponent implements OnInit {
+  coordinates;
   opinionTap = false;
   complaintsTap = false;
   contactUsTap = true;
   taps = []
   contacts=[];
-  constructor() {
+
+  constructor(private geoLocationService :GeoLocationService) {
+
     this.taps = [
       { title: 'شكاوي واقتراحات', name: 'complaintsTap', active: this.complaintsTap },
       { title: 'استطلاع رأي', name: 'opinionTap', active: this.opinionTap },
@@ -28,6 +31,13 @@ export class VoiceComponent implements OnInit {
   }
 
   ngOnInit(): void {
+    this.geoLocationService.getPosition().subscribe(
+      (pos: Position) => {
+          this.coordinates = {
+            latitude:  +(pos.coords.latitude),
+            longitude: +(pos.coords.longitude)
+          };
+      });
   }
 
   changeTap(tap) {

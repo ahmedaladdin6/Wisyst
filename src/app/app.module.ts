@@ -12,7 +12,9 @@ import { ReportsComponent } from './components/reports/reports.component';
 import { ServicesComponent } from './components/services/services.component';
 import { ActivitesComponent } from './components/activites/activites.component';
 import { MediaComponent } from './components/media/media.component';
-import { VoiceComponent } from './components/voice/voice.component'
+import { VoiceComponent } from './components/voice/voice.component';
+import { AgmCoreModule } from '@agm/core';
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -30,6 +32,9 @@ import { VoiceComponent } from './components/voice/voice.component'
     BrowserModule,
     AppRoutingModule,
     SharedModulesModule,
+    AgmCoreModule.forRoot({
+      apiKey: 'AIzaSyA7K_b43rBNzfJ83tlg-QgSYHEDkhIqbIc&v=3.exp&libraries=places'
+    })
   ],
   providers: [],
   bootstrap: [AppComponent]
