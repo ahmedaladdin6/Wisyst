@@ -60,10 +60,29 @@ nav {
             a{
                 color:#fff;
                 text-decoration: none;
-                &:active{
+                &:active,&:hover{
                     color:#e3da56;
                 }
             }
         }
     }
 }
+
+i.menu,i.closed{
+    display: none;
+}
+
+@media only screen and (max-width: 991px) {
+  div.sideMenu{
+      background-color: #417a1f;
+      width:100%;
+      padding:10px;
+    i.menu,i.closed{
+        display: inline;
+        color: #fff;
+    }
+  }
+    header,nav{
+        display: none;
+    }
+  }

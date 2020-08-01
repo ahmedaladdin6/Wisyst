@@ -1,5 +1,12 @@
+<!--header in screen less than 990 px-->
+<div class="sideMenu">
+    <i *ngIf="!showSideMenu" class="menu mt-2 fas fa-align-justify" (click)="openMenu()"></i>
+    <i *ngIf="showSideMenu"  class="fas fa-window-close closed" (click)="openMenu()"></i>
+</div>
+<app-sidemenu *ngIf="showSideMenu"></app-sidemenu>
+
+<!--header in screen greater than 990 px-->
 <header>
-    <!--600-->
     <div class="container">
         <div class="row header">
             <div class="col-sm-6 d-flex justify-content-between">

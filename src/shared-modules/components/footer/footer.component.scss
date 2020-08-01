@@ -72,7 +72,6 @@ div.info{
 // use mixn scss with paramater here (class section)
 @media only screen and (max-width: 767px) {
     section.header {
-        background-color: blue;
         height: auto;
         .col-md-4 {
             position: static;
@@ -84,5 +83,10 @@ div.info{
                 background-color: white;
             }
         }
+    }
+}
+@media only screen and (max-width: 433px) {
+    .copyWrite{
+        font-size:1.8vh;
     }
 }

@@ -1,6 +1,6 @@
 .bolder{
  font-weight: bolder;
- font-size: 20px;;
+ font-size: 20px;
 }
 
 .carousel-inner {
@@ -33,3 +33,9 @@
       background-color: gray;
   }
 }
+
+@media only screen and (max-width: 991px) {
+  .carousel{
+      display: none;
+  }
+    }

@@ -1,0 +1,51 @@
+div.sideMenu{
+    position: relative;
+    background-color: #417a1f;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    color:#fff;
+    width:300px;
+    height: 100%;
+    padding:20px;
+    position: fixed;
+    top:0;
+    right: 0;
+    bottom:0;
+    z-index:1;
+    p{
+        font-size:15px;
+        font-weight: bolder;
+        line-height: 0;
+    }
+    ul.menu{
+        list-style-type: none;
+        li{
+            padding:30px 20px 0 0;
+            a{
+                text-decoration: none;
+                color:#fff;
+                font-size:20px;
+                &:active, &:hover{
+                    color:#e3da56;
+                }
+            }
+        }
+    }
+    .footer{
+       direction: rtl;
+       position: absolute;
+       bottom:10px;
+       left:0;
+       right:10px;
+       span.info{
+           display: block;
+       }
+    }
+   
+}
+
+
+@media only screen and (min-width: 992px) {
+    .sideMenu{
+        display: none;
+    }
+    }

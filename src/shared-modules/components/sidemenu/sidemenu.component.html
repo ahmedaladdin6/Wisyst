@@ -1,0 +1,28 @@
+<div class="sideMenu">
+    <div class="d-flex justify-content-around">
+        <div class="website pt-3">
+            <p class="info">جمعية اليقظة النسائية الخيرية </p>
+            <p class="name pl-5"> www.alyakaza.com </p>
+        </div>
+        <div class="logoImg text-right">
+            <img src="../../../assets/images/logo.jpg" width="70px" height="auto" class="rounded-circle img-fluid"
+                alt="yakza-logo">
+        </div>
+    </div>
+    <ul class="menu text-right">
+        <li *ngFor="let item of menu">
+            <a [routerLink]="item.router">{{item.name}}</a>
+        </li>
+    </ul>
+
+    <div class="footer text-right">
+        <span class="info">
+            <i class='fas fa-blog'></i>
+            <span class="mr-2">المملكة العربية السعودية</span>
+        </span>
+        <span class="info">
+            <i class='fas fa-envelope'></i>
+            <span class="mr-2">yakaza.ht@gamil.com</span>
+        </span>
+    </div>
+</div>

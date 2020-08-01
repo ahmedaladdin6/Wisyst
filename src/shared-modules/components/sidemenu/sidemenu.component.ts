@@ -1,14 +1,14 @@
 import { Component, OnInit } from '@angular/core';
 
 @Component({
-  selector: 'app-header',
-  templateUrl: './header.component.html',
-  styleUrls: ['./header.component.scss']
+  selector: 'app-sidemenu',
+  templateUrl: './sidemenu.component.html',
+  styleUrls: ['./sidemenu.component.scss']
 })
-export class HeaderComponent implements OnInit {
-  menu = [];
-  showSideMenu=false;
-  constructor() {
+export class SidemenuComponent implements OnInit {
+menu=[];
+
+  constructor() { 
     this.menu = [
       { name: 'الرئسية' ,router:'home'},
       { name: 'عن الجمعية',router:'about'},
@@ -23,13 +23,8 @@ export class HeaderComponent implements OnInit {
   }
 
   ngOnInit(): void {
-  }
-  openMenu(){
-    if(this.showSideMenu == true)
-   this.showSideMenu =false;
-   else
-   this.showSideMenu =true;
+    console.log('bb');
 
-    
   }
+
 }
