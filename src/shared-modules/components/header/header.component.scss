@@ -18,19 +18,19 @@ header {
             p.name {
                 line-height: 0;
                 letter-spacing: 3px;
-                color: orange;
+                color: #e3da56;
             }
         }
         .logoImg {
             width: 70px;
             img {
-                border: 2px solid orange;
+                border: 2px solid #e3da56;
             }
         }
         button.donation{
             margin-top:-10px;
             height: 50px;
-            background-color: orange;
+            background-color: #e3da56;
             color:#fff;
             i{
                 color: #fff;
@@ -61,7 +61,7 @@ nav {
                 color:#fff;
                 text-decoration: none;
                 &:active{
-                    color:orange;
+                    color:#e3da56;
                 }
             }
         }

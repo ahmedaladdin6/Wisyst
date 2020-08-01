@@ -1,46 +1,88 @@
-section.header{
-    background-color: blue;
+.bolder{
+    font-weight: bolder;
+    font-size:20px;
+}
+.gray{color:gray}
+
+section.header {
     height: 120px;
-    .col-md-4{
-    position: relative;
-        .yourOpinion{
-            height: 250px;
-            width:100%;
-            border :1px solid orange;
-            position: absolute;
-            background-color: white;
+    .col-md-8{
+        .input-group-lg{
+            width:60%;
+            float: right;
+            input{
+                direction: rtl;
+            }
+            span{
+                background-color: #417a1f;
+                color:#fff;
+            }
         }
     }
+    .col-md-4 {
+        position: relative;
+        .yourOpinion {
+            height: 350px;
+            width: 100%;
+            position: absolute;
+            border: 10px solid #fff;
+            border-radius: 10px;
+            background-color: white;
+            .content{
+                height: 330px;
+                border: 3px solid #e3da56;
+                border-radius: 10px;
+                form{
+                    direction: rtl;
+                    button{
+                        width:100%;
+                        background-color:#417a1f;
+                        color: #fff;
+                    }
+                }
+            }
+        }
     }
+}
 
-section.footer{
-    // height: 150px;
-    // padding-top:30px;
-    background-color: black;
-   div.copyWrite{
-       padding:10px;
-       position: fixed;
-       bottom: 0;
-       left:0;
-       right:0;
-       background-color: orange;
-   }
+section.footer {
+    background-color: #292f25;
+div.info{
+    padding-bottom:50px!important;
+    div.links{
+        color:#fff;
+        i{
+            margin-left:5px;
+        }
+        p.link{
+         line-height:0px;
+        }
+    }
+}
+    div.copyWrite {
+        padding: 10px;
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        background-color: #e3da56;
+    }
 }
 
 // use mixn scss with paramater here (class section)
 @media only screen and (max-width: 767px) {
-    section.header{
+    section.header {
         background-color: blue;
         height: auto;
-        .col-md-4{
-        position: static;
-            .yourOpinion{
+        .col-md-4 {
+            position: static;
+            .yourOpinion {
                 height: auto;
-                width:100%;
-                border :1px solid orange;
+                width: 100%;
+                border: 1px solid orange;
                 position: static;
                 background-color: white;
             }
         }
-        }
-  }
+    }
+}

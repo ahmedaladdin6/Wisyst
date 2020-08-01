@@ -1,41 +1,69 @@
 <section class=" header container">
     <div class="row">
-        <div class="col-md-8" style="background-color: red;">
-            <p>الرئيسية</p>
-            <p>jhdjkdkj</p>
-            <p> search</p>
+        <div class="col-md-8 text-right emailmenu" >
+            <p class="bolder">القائمة البريدية</p>
+            <p class="gray">ادخل بريدك الالكتروني لتصلك احدث الاخبار والمستجدات عن برنامج ومشاريع الجمعية</p>
+            <div class="input-group mb-3 input-group-lg">
+                <div class="input-group-prepend">
+                  <span class="input-group-text">اشترك الان</span>
+                </div>
+                <input type="email" class="form-control" placeholder="البريد الالكتروني">
+            </div>
         </div>
-        <div class="col-md-4">
+        <div class="col-md-4 text-right">
             <div class="yourOpinion">
-                <p>رايك يهمنا</p>
-                <p>ffff</p>
-                <p>ffffff</p>
+                <div class="content p-3">
+                    <p class="bolder">رايك يهمنا</p>
+                    <p class="gray">ما هو انطباعك حول الخدمات التي تقدمها الجمعية للمستفيدين ؟</p>
+                    <form>
+                        <div class="form-check gray">
+                            <label class="form-check-label">
+                              <input type="radio" class="form-check-input" name="optradio" checked> 
+                              <span class="mr-3"> راضي تماما</span>
+                            </label>
+                          </div>
+                          <div class="form-check gray">
+                            <label class="form-check-label">
+                              <input type="radio" class="form-check-input" name="optradio">  
+                              <span class="mr-3"> راضي </span>
+                            </label>
+                          </div>
+                          <div class="form-check  gray">
+                            <label class="form-check-label">
+                              <input type="radio" class="form-check-input" name="optradio" > 
+                              <span class="mr-3">  غير راضي</span>  
+                            </label>
+                          </div>
+                        <button type="submit" class="btn btn-default mt-5">قم بالتصويت الان</button>
+                      </form>
+                </div>
             </div>
         </div>
     </div>
 </section>
-<section class="footer">
+<section class="footer mt-5">
     <div class="container">
-        <div class="row pt-3">
-            <div class="col-md-4" style="background-color: blueviolet;">
-               <p>روابط مهمه</p>
-               <p>tttttttttttt</p>
-               <p>tttttttttttt</p>
-               <p>tttttttttttt</p>
-               <p>tttttttttttt</p>
+        <div class="row info">
+            <div class="col-md-4 links text-right pt-3">
+               <p class="bolder"> معلومات التواصل</p>
+               <p>العنوان : المملكة العربية الشعودية - الطائف -حي المثناه -شارع محمد بن عبد الوهاب</p>
+               <p>الهاتف :012778778</p>
+               <p>الجوال : 1222222333</p>
+               <p>  yalaza.ht@gmail.com: البريد الالكتروني  </p>
             </div>
-            <div class="col-md-4" style="background-color: red;">
-                <p>معلومات التواصل</p>
-                <p>tttttttttttt</p>
-                <p>tttttttttttt</p>
-                <p>tttttttttttt</p>
-                <p>tttttttttttt</p>
-                <p>tttttttttttt</p>
+            <div class="col-md-4 links text-right pt-3">
+                <p class="bolder"> روابط مهمة</p>
+                <p class="link"> وزارة العمل والتنمية الاجتماعية <i class="far fa-edit"></i></p>
+                <p class="link"> الضمان الاجتماعي <i class="far fa-edit"></i></p>
+                <p class="link"> المؤسسة العامة التدريب التقني والمهني<i class="far fa-edit"></i> </p>
+                <p class="link">وزارة التعليم <i class="far fa-edit"></i></p>
             </div>
         </div>
     </div>
     
-    <div class="copyWrite container mt-3">
-      copywrite
+    <div class="copyWrite container mt-3 text-center">
+      <span>جميع الحقوق محفوظة لجمعية يقظة النسائية الخيرية</span>
+      <span> - {{date|date:'yyyy'}} </span>
+      &copy; 
     </div>
 </section>
