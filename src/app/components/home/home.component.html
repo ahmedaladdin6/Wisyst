@@ -23,19 +23,46 @@
     </a>
 </div>
 
-<div class="container">
-        <div class="row">
-            <div class="col-md-8" style="background-color: cadetblue;">
-                <h1>جمعيه التميه البشرية</h1>
-            </div>
-            <div class="col-md-4" style="background-color: blue;">
-                photo
-            </div>
+<div class="container mt-4">
+    <div class="row info">
+        <div class="col-md-8 text-right">
+            <p class="bolder">جمعيه اليقظة النسائية الخيرية </p>
+            <p>
+                قدمت جمعية اليقظه النسائية الخيريه بالطائف من قسم الانشطة بزيارة معايدة للامهاتنا وجداتنا الغاليات بمركز
+                دار الرعاية للمسنات وذلك بالمشاركة مع فريق
+                ( بصمة عطاء ). ووفقنا الله واياكم على كل بصمة خير
+            </p>
+            <p>
+                قدمت جمعية اليقظه النسائية الخيريه بالطائف من قسم الانشطة بزيارة معايدة للامهاتنا وجداتنا الغاليات بمركز
+                دار الرعاية للمسنات وذلك بالمشاركة مع فريق
+                ( بصمة عطاء ). ووفقنا الله واياكم على كل بصمة خير
+            </p>
+            <p>
+                قدمت جمعية اليقظه النسائية الخيريه بالطائف من قسم الانشطة بزيارة معايدة للامهاتنا وجداتنا الغاليات بمركز
+                دار الرعاية للمسنات وذلك بالمشاركة مع فريق
+                ( بصمة عطاء ). ووفقنا الله واياكم على كل بصمة خير
+            </p>
         </div>
-        <div class="row">
-            <h1>فعاليات وانشطه</h1>
+        <div class="col-md-4">
+            <img src="../../../assets/images/home.jpg" class="rounded img-fluid" alt="home">
         </div>
-        <div class="row">
-            <h1> الشركاء</h1>
+    </div>
+    <div class="row bolder text-center mt-5">
+        <span class="col-md-12"> فعاليات وانشطه</span>
+    </div>
+    <div class="row activites mt-3">
+        <div class="col-md-4 text-center" *ngFor="let activity of activites">
+            <img [src]="activity.image" class="rounded img-fluid" width="100%" height="auto" alt="activity.alt">
+            <button class="btn btn-default">{{activity.button}}</button>
         </div>
+    </div>
+    <div class="row bolder text-center mt-5">
+        <span class="col-md-12"> الشركاء</span>
+    </div>
+
+    <div class="row partners mt-3 mb-5">
+        <div class="col-md-4 text-center" *ngFor="let partner of partners">
+            <img [src]="partner.image" class="rounded img-fluid" width="100%" height="auto" alt="paartner.alt">
+        </div>
+    </div>
 </div>
