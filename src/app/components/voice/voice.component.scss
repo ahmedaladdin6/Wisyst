@@ -1,5 +1,5 @@
 div.slider{
-    background-color: rgb(226, 210, 226);
+    background-color: #ffeeff;
     padding:30px;
     span{
         margin:8px;
@@ -25,6 +25,22 @@ div.taps{
         direction: rtl;
         button{
             width:100%;
+        }
+    }
+}
+
+div.contacts{
+    color:gray;
+    p{
+        line-height: 0;
+        i{
+            color:#417a1f
+        }
+    }
+    .socialMedia{
+        direction: rtl;
+        i{
+            margin-left: 5px;
         }
     }
 }

@@ -10,11 +10,20 @@ export class VoiceComponent implements OnInit {
   complaintsTap = false;
   contactUsTap = true;
   taps = []
+  contacts=[];
   constructor() {
     this.taps = [
       { title: 'شكاوي واقتراحات', name: 'complaintsTap', active: this.complaintsTap },
       { title: 'استطلاع رأي', name: 'opinionTap', active: this.opinionTap },
       { title: 'اتصل بنا', name: 'contactUsTap', active: this.contactUsTap }
+    ];
+
+    this.contacts=[
+      {name:'طريق عبد الله بن زمعة -الؤياض- المملكة العربية السعودية',icon:'fas fa-phone-alt'},
+      {name:'0122223565',icon:'fas fa-phone-square-alt'},
+      {name:'05596874521',icon:'fas fa-phone-alt'},
+      {name:'055589526',icon:'fab fa-whatsapp-square'},
+      {name:'yakaza.hr@hmail.com',icon:'fas fa-envelope	'},
     ]
   }
 

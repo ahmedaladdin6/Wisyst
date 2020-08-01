@@ -1,4 +1,4 @@
-<div class="slider text-center">
+<div class="slider text-center mb-5">
     <h1> سمعنا صوتك</h1>
     <span>الرئيسية</span>
     <span>سمعنا صوتك</span>
@@ -8,16 +8,26 @@
 <div class="container">
     <div class="row mb-5">
         <div class="col-md-6">
-            <div class="mb-2" style="background-color: chartreuse; width:100%;height: 250px;">Map</div>
-            <div  style="background-color: chartreuse;width:100%;height:150px;">
-                 contact us
+            <div class="mb-2" style="background-color: chartreuse; width:100%;height: 200px;">Map</div>
+            <div class="contacts text-right p-3">
+                <p *ngFor="let info of contacts">
+                    {{info.name}}
+                    <i [class]="info.icon"></i>
+                </p>
+                <div class="socialMedia">
+                    <i class=' fab fa-facebook-square'></i>
+                    <i class=' fab fa-twitter-square'></i>
+                    <i class=' fab fa-instagram'></i>
+                    <i class=' fab fa-youtube-square	'></i>
+                    <i class=' fab fa-snapchat-square'></i>
+                </div>
             </div>
         </div>
         <div class="col-md-6">
             <div class="taps">
                 <div class="header d-flex justify-content-around">
-                    <span  *ngFor="let tap of taps" [class.activeTap]="tap.active" (click)="changeTap(tap)">
-                      {{tap.title}}
+                    <span *ngFor="let tap of taps" [class.activeTap]="tap.active" (click)="changeTap(tap)">
+                        {{tap.title}}
                     </span>
                 </div>
                 <div class="forms">
@@ -32,8 +42,8 @@
                             <input type="text" class="form-control" placeholder="رقم الجوال" name="pswd">
                         </div>
                         <div class="form-group">
-                            <textarea class="form-control" rows="5"placeholder="الرسالة"></textarea>
-                          </div>
+                            <textarea class="form-control" rows="5" placeholder="الرسالة"></textarea>
+                        </div>
                         <button type="submit" class="btn btn-primary">ارسل الان</button>
                     </form>
                     <div class="text-center" *ngIf="opinionTap">
