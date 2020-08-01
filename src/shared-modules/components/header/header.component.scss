@@ -1,8 +1,69 @@
-ul.menu{
-    padding:10px;
-    li{
-        font-size: 15px;
-     display: inline;
-     margin:10px;
+header {
+    padding: 15px;
+    background-color: #fff;
+
+    i {
+        color: #417a1f;
+    }
+
+    hr {
+        width: 100%;
+        border: none;
+        height: 1px;
+        background-color: #417a1f;
+    }
+
+    .logo {
+        .website {
+            p.name {
+                line-height: 0;
+                letter-spacing: 3px;
+                color: orange;
+            }
+        }
+        .logoImg {
+            width: 70px;
+            img {
+                border: 2px solid orange;
+            }
+        }
+        button.donation{
+            margin-top:-10px;
+            height: 50px;
+            background-color: orange;
+            color:#fff;
+            i{
+                color: #fff;
+            }
+        }
+        button.volunteer{
+            margin-top:-10px;
+            height: 50px;
+            background-color: #417a1f;
+            color:#fff ;
+            i{
+                color: #fff;
+            }
+        }
+    }
+}
+
+nav {
+    background-color:#417a1f;
+    border-radius:5px;
+    ul.menu {
+        padding: 10px;
+        li {
+            font-size: 15px;
+            display: inline;
+            margin: 10px;
+            a{
+                color:#fff;
+                text-decoration: none;
+                &:active{
+                    color:orange;
+                }
+            }
+        }
     }
 }

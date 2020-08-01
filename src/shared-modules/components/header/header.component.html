@@ -1,24 +1,68 @@
 <header>
     <!--600-->
     <div class="container">
-        <div class="row">
-            <div class="col-sm-6" style="background-color: green;">
-                تليفون - تواصل -ميل
-              </div>
-            <div class="col-sm-6" style="background-color: red;">
-              اسم الشركه
+        <div class="row header">
+            <div class="col-sm-6 d-flex justify-content-between">
+                <span>
+                    <span class="mr-2">yakaza.ht@gamil.com</span>
+                    <i class='fas fa-envelope'></i>
+                </span>
+                <span>
+                    <span class="mr-2">01222356522</span>
+                    <i class='fas fa-phone-alt'></i>
+                </span>
+                <span>
+                    <span class="mr-2">05599991118</span>
+                    <i class='fas fa-mobile-alt'></i>
+                </span>
+            </div>
+            <div class="col-sm-6 d-flex justify-content-end">
+                <span class="mr-2">المملكة العربية السعودية- شارع محمد عبد الوهاب</span>
+                <i class='fas fa-blog'></i>
             </div>
         </div>
-        <div class="row">
-            <div class="col-sm-6" style="background-color: blue;">اخبار الجمعيه - الخدمات </div>
-            <div class="col-sm-6" style="background-color: yellow;">اللوجو والصوره</div>
+    </div>
+    <hr>
+    <div class="container">
+        <div class="row logo container">
+            <div class="col-sm-6 d-flex justify-content-between">
+                <div class="btn-group btn-group-md">
+                    <button type="button" class="btn btn-default donation">
+                        تبرع
+                        <i class="fas fa-money-bill-alt ml-1"></i>
+                    </button>
+                    <button type="button" class="btn btn-default volunteer">
+                        تطوع
+                        <i class="fas fa-people-carry ml-1"></i>
+                    </button>
+                  </div>
+                <span>
+                    الخدمات الاكترونية
+                    <i class="fas fa-atlas ml-2"></i>
+                </span>
+                <span>
+                    اخبار
+                    <i class="fas fa-clipboard-list ml-2"></i>
+                </span>
+            </div>
+            <div class="col-sm-6 d-flex justify-content-end">
+                <div class="website">
+                    <p class="info">جمعية اليقظة النستئية الخيرية </p>
+                    <p class="name"> www.alyakaza.com </p>
+                </div>
+                <div class="logoImg">
+                    <img src="../../../assets/images/logo.jpg" width="100%" height="auto"
+                        class="rounded-circle img-fluid" alt="yakza-logo">
+                </div>
+            </div>
         </div>
     </div>
 </header>
-<nav class="container" style="background-color:aquamarine;">
+
+<nav class="container">
     <ul class="menu">
         <li class="" *ngFor="let item of menu">
-          <a class="" [routerLink]="item.router">{{item.name}}</a>
+            <a class="" [routerLink]="item.router">{{item.name}}</a>
         </li>
     </ul>
 </nav>
